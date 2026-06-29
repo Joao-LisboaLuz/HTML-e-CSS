@@ -1,2 +1,68 @@
 @charset "UTF-8";
 
+@media screen and (min-width :767px ) and (max-width:1023px){
+    
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+        background-color: rgb(0, 133, 250);
+    }
+
+    header > nav > a{
+        color: black;
+    }
+
+    main > .container > #pc{display: none;}
+    main > .container > #print{display: none;}
+    main> .container > #tv{display: none;}
+    main > .container > #tablet{display: flex;}
+    main > .container > #phone{display: none}
+}
+
+@media screen and (min-width :1024px ) and (max-width:1379px){
+
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    header > nav > a{
+        color: black;
+    }
+
+    main > .container > #pc{display: flex;}
+    main > .container > #print{display: none;}
+    main> .container > #tv{display: none;}
+    main > .container > #tablet{display: none;}
+    main > .container > #phone{display: none}
+}
+
+@media screen and (min-width :1379px ){
+    
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    header > nav > a{
+        color: black;
+    }
+
+    main > .container > #pc{display: none;}
+    main > .container > #print{display: none;}
+    main> .container > #tv{display: flex;}
+    main > .container > #tablet{display: none;}
+    main > .container > #phone{display: none}
+
+}
+
+@media print{
+    body{
+        background-image: none;
+
+    }
+    main > .container > #pc{display: none;}
+    main > .container > #print{display: flex;}
+    main> .container > #tv{display: none;}
+    main > .container > #tablet{display: none;}
+    main > .container > #phone{display: none}
+    
+
+}

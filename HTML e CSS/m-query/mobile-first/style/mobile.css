@@ -26,29 +26,33 @@ header{
 header > h1{
     color: rgb(193, 211, 230);
     margin-bottom: 20px;
+    text-shadow: 2px 2px 0px black;
 
 }
 
-img{
-    position: relative;
+header > nav {
+    height: 30px;
 }
 
-img #phone{
-    display: block;
+header > nav > a{
+    color: rgb(171, 169, 189);
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
 }
 
-img #tablet {
-    display: none;
+main > .container{
+    margin: 7vw;
+    background-color: rgba(116, 140, 161, 0.452);
+    display: flex;
+    justify-content: center;
 }
 
-img #pc{
-    display: none;
+main > .container > #phone{
+   display: flex;
 }
 
-img #tv {
-    display: none;
-}
-
-img #print {
-    display: none;
-}
+main > .container > #pc{display: none;}
+main > .container > #print{display: none;}
+main> .container > #tv{display: none;}
+main > .container > #tablet{display: none;}
