@@ -11,15 +11,23 @@
         <div id="container">
             <h1>Formulário de Login</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure dolorem eius, odio doloribus quam unde atque pariatur voluptatum, libero architecto!</p>
-            <form action="POST">
-                <label for="name">Nome:</label>
-                <input type="name" name="name" id="name">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
+            <form action="POST" autocomplete="on">
+                <div class="block">
+                    <label for="name">Nome:</label>
+                    <input type="name" name="name" id="name" required placeholder="Digite aqui seu nome" size="40">
+                </div>
+                <div class="block">
+                    <label for="email" >Email:</label>
+                    <input type="email" name="email" id="email" required placeholder="Digite aqui seu Email" minlength="7" size="40">
+                </div>
+                <div class="base">
+                    <input type="reset">
+                    <input type="submit" value="Enviar">
+                </div>
             </form>
         </div>
         <div id="background">
-            <img src="img/deitado.png" alt="">
+            <img src="img/deitado.png" alt="complemento">
         </div>
     </main>
 </body>

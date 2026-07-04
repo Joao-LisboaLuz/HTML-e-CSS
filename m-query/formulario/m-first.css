@@ -5,19 +5,19 @@
     padding: 0%;
 }
 
-html{
-    width: 100vw;
-    height: 100vw;
-}
+    html{
+        width: 100vw;
+        height: 100vw;
+    }
 
-body{
-    background-image: linear-gradient(35deg, rgb(4, 4, 46), rgb(38, 67, 131),rgb(17, 72, 190));
-    background-attachment: fixed;
-}
+    body{
+        background-image: linear-gradient(35deg, rgb(4, 4, 46), rgb(38, 67, 131),rgb(17, 72, 190));
+        background-attachment: fixed;
+    }
 
 main{
     display: flex;
-    margin: 50% auto;
+    margin: 10em auto;
     background-color: rgb(0, 162, 255);
     width: 480px ;
     flex-direction: column-reverse;
@@ -25,6 +25,7 @@ main{
     align-items:baseline ;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
+    border-radius: 9px;
 }
 
 main > #container{
@@ -32,19 +33,77 @@ main > #container{
     width: 480px;
     margin: 0%;
     padding: 0%;
+    border-radius: 0px 0px 10.9px 10.9px;
 }
 
 main > #container> h1{
     color: rgb(21, 21, 68);
     text-align: center;
     text-shadow: 1px 1px 4px blue;
-    font-size: 35px;
+    font-size: min(3em, 35px);
     margin: 10px auto 15px auto;
+    font-weight: 600;
 }
 
 main > #container > p{
     padding: 0px 5px 10px 5px;
     text-align: center;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+main > #container > form> .block{
+    justify-content: center;
+    margin: 20px;
+    background-color:rgb(21, 21, 68) ;
+    padding: 9px;
+    border-radius: 9px;
+    text-align: center;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.267);
+}
+
+main > #container > form> .block > label{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+main > #container > form> .block >input{
+    font-size: 15px;
+    background-color: rgb(17, 72, 190);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    text-indent: 7px;
+    border: 0cap;
+}
+
+main > #container > form> .base {
+    text-align: center;
+    background-color: rgb(21, 21, 68);
+    height: 3em;
+    border-end-end-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+
+main > #container > form> .base > input{
+    margin: 10px;
+    font-size: 19px;
+    font-weight: 700;
+    width: 100px;
+    height: 30px;
+    background-color:rgb(17,72,190) ;
+    border: 0cap;
+    color: white;
+    text-shadow: 0px 0px 2px black;
+    border-radius:5px ;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.589);
+}
+
+main > #container > form> .base > input:hover{
+    background-color: white;
+    color:rgb(17,72,190) ;
+    text-shadow: 0px 0px 1px black;
+    transition-duration: .5s;
 }
 
 main > #background{
@@ -53,6 +112,7 @@ main > #background{
 }
 
 main > #background > img{
-    
+    border-radius: 9px 9px 0px 0px;
     max-width: 481px;
+    margin: 0px 0px -3px 0px; 
 }
