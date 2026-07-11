@@ -1,5 +1,42 @@
 @charset "UTF-8";
 
-@media screen {
-    
+@media screen and (min-width:767px) and (max-width:1023px ){
+    main{
+        flex-direction:row;
+        width: 79vw;
+        align-items: center;
+        height: 700px;
+
+
+    }
+
+    main > #container{
+        height: 700px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    main > #container> h1{
+        margin: 30px;
+    }
+
+    main > #container > form> .base {
+        justify-content: baseline;
+        background-color: white;
+        margin-top: 50px;
+    }
+
+      main > #background{
+        background-image: url(img/quase.png);
+        width: 30%;
+      }
+
+    main > #background > img#deitado{
+        display: none;
+    }
+    main> #background > img#quase{
+        display: block;
+     
+    }
 }

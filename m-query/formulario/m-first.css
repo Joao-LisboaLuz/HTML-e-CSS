@@ -4,22 +4,22 @@
     margin: 0%;
     padding: 0%;
 }
-
-    html{
+    html, body{
         width: 100vw;
-        height: 100vw;
+        height: auto;
     }
 
     body{
-        background-image: linear-gradient(35deg, rgb(4, 4, 46), rgb(38, 67, 131),rgb(17, 72, 190));
-        background-attachment: fixed;
+        background-image: linear-gradient(to bottom, rgb(4, 4, 46), rgb(38, 67, 131),rgb(17, 72, 190));
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
 main{
     display: flex;
     margin: 10em auto;
     background-color: rgb(0, 162, 255);
-    width: 480px ;
+    width: 479px ;
     flex-direction: column-reverse;
     padding: 0%;
     align-items:baseline ;
@@ -27,14 +27,15 @@ main{
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 9px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.651);
+    overflow: hidden;
+    
 }
 
 main > #container{
     background-color: rgb(255, 255, 255);
-    width: 480px;
+    width: 479px;
     margin: 0%;
     padding: 0%;
-    border-radius: 0px 0px 10.9px 10.9px;
 }
 
 main > #container> h1{
@@ -82,8 +83,6 @@ main > #container > form> .base {
     text-align: center;
     background-color: rgb(21, 21, 68);
     height: 3em;
-    border-end-end-radius: 9px;
-    border-bottom-left-radius: 9px;
 }
 
 main > #container > form> .base > input{
@@ -110,10 +109,19 @@ main > #container > form> .base > input:hover{
 main > #background{
     margin: 0%;
     padding: 0%;
+    height: auto;    
+    justify-content: center;
 }
 
 main > #background > img{
-    border-radius: 9px 9px 0px 0px;
-    max-width: 481px;
-    margin: 0px 0px -3px 0px; 
+    display: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+main > #background > img#deitado{
+    display: block;
+    max-width: 480px;
+    margin: 0%;
+    padding: 0%;
 }
