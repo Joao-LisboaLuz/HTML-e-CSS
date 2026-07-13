@@ -18,8 +18,8 @@
 main{
     display: flex;
     margin: 10em auto;
-    background-color: rgb(0, 162, 255);
-    width: 479px ;
+    background-color: rgb(255, 255, 255);
+    width: 479px;
     flex-direction: column-reverse;
     padding: 0%;
     align-items:baseline ;

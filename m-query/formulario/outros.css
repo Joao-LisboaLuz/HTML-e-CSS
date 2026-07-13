@@ -40,3 +40,30 @@
      
     }
 }
+
+@media screen and (min-width:1024px) {
+
+    main{
+        flex-direction: row-reverse;
+        width:  min(80vw, 1200px) ;
+        align-items: center;
+    }
+
+    main > #container{
+       width: min( 29em, 50vw) ;
+       height: min(59.7vw,63.7vw,65vw,67vw,70vw, 824px);
+    }
+
+    main > #background > img#deitado{
+        display: none;
+    }
+    main> #background > img#quase{
+        display: none  ;
+     
+    }
+    main> #background > img#inteiro{
+        display: block;
+        width: 100%;
+      
+    }
+}   
